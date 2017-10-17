@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="HA2_FabianHehemann_706315_JPA" transaction-type="JTA">
+		<jta-data-source>java:/jdbc/ha2_fabianhehemann_706315_jpa</jta-data-source>
+		<!--<jta-data-source>java:/EJB_JPA_Auftrag</jta-data-source>-->
+		<class>de.awk.model.Mechaniker</class>
+		<class>de.awk.model.Rennen</class>
+		<class>de.awk.model.Rennergebnis</class>
+		<class>de.awk.model.Rennteam</class>
+		<class>de.awk.model.Startaufstellung</class>
+		<class>de.awk.model.Teammitglied</class>
+		<class>de.awk.model.User</class>
+		<class>de.awk.model.Pilot</class>
+		<properties>
+			<!--  <property name="javax.persistence.schema-generation.create-database-schemas" value="true"/> -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+		</properties>
+	</persistence-unit>
+</persistence>
