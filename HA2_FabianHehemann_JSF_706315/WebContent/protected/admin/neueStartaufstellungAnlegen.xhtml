@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/main.css" rel="stylesheet" type="text/css" />
+   
+        <title>Startaufstellung anlegen</title>
+    </h:head>
+    <h:body>
+    <h:form>
+    	<h3>Rennen auswählen</h3>	
+    	<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="RennenMenue" value="#{startaufstellungMB.renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Rennen auswaehlen--" noSelectionOption="true"/>
+	        		<f:selectItems value="#{rennenMB.alleRennen}" var="rennen"  itemValue="#{rennen.rennen_id}" itemLabel="#{rennen.ort}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid><br/>
+		<h3>Platz 1</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_1" value="#{startaufstellungMB.platz_01_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 2</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_2" value="#{startaufstellungMB.platz_02_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 3</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_3" value="#{startaufstellungMB.platz_03_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 4</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_4" value="#{startaufstellungMB.platz_04_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 5</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_5" value="#{startaufstellungMB.platz_05_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 6</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_6" value="#{startaufstellungMB.platz_06_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 7</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_7" value="#{startaufstellungMB.platz_07_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 8</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_8" value="#{startaufstellungMB.platz_08_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 9</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_9" value="#{startaufstellungMB.platz_09_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<h3>Platz 10</h3>	
+		<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="Startplatz_10" value="#{startaufstellungMB.platz_10_renn_id}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Team auswaehlen--" noSelectionOption="true"/>
+	        	<f:selectItems value="#{rennteamMB.alleTeams}" var="teams"  itemValue="#{teams.team_ID}" itemLabel="#{teams.name}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+		</h:panelGrid>
+		<br/>
+		<h:commandButton action="#{startaufstellungMB.neueAufstellungAnlegen()}" value="Startaufstellung anlegen" style="width : 200px"/>
+		<br/><h:messages/>
+		<h:commandButton action="main_menue1" value = "Abbruch" style= " width : 200px "/><br/>
+		<h:commandButton action="main_menue1" value = "Zur&uuml;ck" style= " width : 200px "/>
+	</h:form>
+    </h:body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+	<context-root>HA2_FabianHehemann_JSF_706315</context-root>
+	<!-- Security-Domain des Wildfly -->
+	<security-domain>DBAuthTest_HA2</security-domain>
+</jboss-web>

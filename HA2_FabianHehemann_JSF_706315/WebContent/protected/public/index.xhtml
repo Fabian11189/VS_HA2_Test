@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/main.css" rel="stylesheet" type="text/css" />
+   
+        <title>HA2 Rennverwaltung Hauptmenue</title>
+    </h:head>
+    <h:body>
+	<h3>Willkommen in der Rennverwaltung! </h3>	<h:outputLabel value="Benutzer: #{userMB.user.username}" rendered="#{userMB.isUserAdmin()}" />
+	    <br/>
+	    <h:form>
+	    	<h:commandButton action ="anlegenRennen" value="Rennen anlegen" 
+					rendered="#{userMB.isUserAdmin()}" style ="width : 250px  "/>
+			<br/>
+			<h:commandButton action ="anlegenStartaufstellung" value="Startaufstellung eingeben" 
+					rendered="#{userMB.isUserAdmin()}" style ="width : 250px  "/>
+			<br/>
+			<h:commandButton action ="anlegenRennergebnis" value="Rennergebnis eingeben" 
+					rendered="#{userMB.isUserAdmin()}" style ="width : 250px  "/>
+			<br/>
+			<h:commandButton action="anzeigenRennergebnis" value="Rennergebnis anzeigen" style=" width : 250px "/>
+			<br/>
+			<h:commandButton action="anzeigenWeltCupWertung" value="Welt-Cup-Wertung anzeigen" style=" width : 250px "/>
+			<br/>
+			<h:commandButton action="#{userMB.logOut()}" value="Abmelden" style=" width : 250px "/>
+			<br/>
+		</h:form>
+		<td>
+			<img src="../../pictures/logo.jpg" alt="logo" width="20%"> </img>
+		</td>
+    </h:body>
+</html>

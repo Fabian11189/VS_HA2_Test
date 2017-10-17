@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+    
+    <navigation-rule>
+    	<from-view-id>/protected/public/index.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>anlegenRennen</from-outcome>
+    		<to-view-id>/protected/admin/neuesRennenAnlegen.xhtml</to-view-id>
+    	</navigation-case>
+    	
+    	<navigation-case>
+    		<from-outcome>anlegenRennergebnis</from-outcome>
+    		<to-view-id>/protected/admin/neuesRennergebnisAnlegen.xhtml</to-view-id>
+    	</navigation-case>
+    	
+    	<navigation-case>
+    		<from-outcome>anlegenStartaufstellung</from-outcome>
+    		<to-view-id>/protected/admin/neueStartaufstellungAnlegen.xhtml</to-view-id>
+    	</navigation-case>
+    	
+    	<navigation-case>
+    		<from-outcome>anzeigenRennergebnis</from-outcome>
+    		<to-view-id>/protected/public/rennergebnisAnzeigen.xhtml</to-view-id>
+    	</navigation-case>
+    	
+    	<navigation-case>
+    		<from-outcome>anzeigenWeltCupWertung</from-outcome>
+    		<to-view-id>/protected/public/weltcupwertungAnzeigen.xhtml</to-view-id>
+    	</navigation-case>
+    	
+    	<navigation-case>
+    		<from-outcome>logout</from-outcome>
+    		<to-view-id>/abmeldung.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+     <navigation-rule>
+    	<from-view-id>/protected/public/rennergebnisAnzeigen.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>main_menue4</from-outcome>
+    		<to-view-id>/protected/public/index.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+    	<from-view-id>/protected/public/weltcupwertungAnzeigen.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>main_menue2</from-outcome>
+    		<to-view-id>/protected/public/index.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+    	<from-view-id>/protected/admin/neueStartaufstellungAnlegen.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>main_menue1</from-outcome>
+    		<to-view-id>/protected/public/index.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+    	<from-view-id>/protected/admin/neuesRennergebnisAnlegen.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>main_menue3</from-outcome>
+    		<to-view-id>/protected/public/index.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+    	<from-view-id>/protected/admin/neuesRennenAnlegen.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>main_menue</from-outcome>
+    		<to-view-id>/protected/public/index.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+
+</faces-config>

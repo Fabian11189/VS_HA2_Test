@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#protected#public#index.xhtml"
+  PATH="/protected/public/index.xhtml" SHAPE="240,216,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#protected#public#index.xhtml:0" NAME="item"
+   PATH="/protected/public/index.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="anlegenRennen::#protected#admin#neuesRennenAnlegen.xhtml"
+    NAME="output1" PATH="/protected/admin/neuesRennenAnlegen.xhtml"
+    TARGET="rules:#protected#admin#neuesRennenAnlegen.xhtml"
+    TITLE="anlegenRennen" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="anlegenRennergebnis::#protected#admin#neuesRennergebnisAnlegen.xhtml"
+    NAME="output" PATH="/protected/admin/neuesRennergebnisAnlegen.xhtml"
+    TARGET="rules:#protected#admin#neuesRennergebnisAnlegen.xhtml"
+    TITLE="anlegenRennergebnis" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="anlegenStartaufstellung::#protected#admin#neueStartaufstellungAnlegen.xhtml"
+    NAME="output2"
+    PATH="/protected/admin/neueStartaufstellungAnlegen.xhtml"
+    TARGET="rules:#protected#admin#neueStartaufstellungAnlegen.xhtml"
+    TITLE="anlegenStartaufstellung" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="anzeigenRennergebnis::#protected#public#rennergebnisAnzeigen.xhtml"
+    NAME="output3" PATH="/protected/public/rennergebnisAnzeigen.xhtml"
+    TARGET="rules:#protected#public#rennergebnisAnzeigen.xhtml"
+    TITLE="anzeigenRennergebnis" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="anzeigenWeltCupWertung::#protected#public#weltcupwertungAnzeigen.xhtml"
+    NAME="output4" PATH="/protected/public/weltcupwertungAnzeigen.xhtml"
+    TARGET="rules:#protected#public#weltcupwertungAnzeigen.xhtml"
+    TITLE="anzeigenWeltCupWertung" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="logout::#abmeldung.xhtml" NAME="output5"
+    PATH="/abmeldung.xhtml" TARGET="rules:#abmeldung.xhtml"
+    TITLE="logout" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#abmeldung.xhtml" PATH="/abmeldung.xhtml"
+  SHAPE="496,129,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#protected#admin#neuesRennenAnlegen.xhtml"
+  PATH="/protected/admin/neuesRennenAnlegen.xhtml" SHAPE="464,273,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#protected#admin#neuesRennenAnlegen.xhtml:0"
+   NAME="item" PATH="/protected/admin/neuesRennenAnlegen.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="main_menue::#protected#public#index.xhtml"
+    NAME="output" PATH="/protected/public/index.xhtml"
+    TARGET="rules:#protected#public#index.xhtml" TITLE="main_menue" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM
+  NAME="rules:#protected#admin#neuesRennergebnisAnlegen.xhtml"
+  PATH="/protected/admin/neuesRennergebnisAnlegen.xhtml"
+  SHAPE="480,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#protected#admin#neuesRennergebnisAnlegen.xhtml:0"
+   NAME="item" PATH="/protected/admin/neuesRennergebnisAnlegen.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="main_menue3::#protected#public#index.xhtml"
+    NAME="output" PATH="/protected/public/index.xhtml"
+    TARGET="rules:#protected#public#index.xhtml" TITLE="main_menue3" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM
+  NAME="rules:#protected#admin#neueStartaufstellungAnlegen.xhtml"
+  PATH="/protected/admin/neueStartaufstellungAnlegen.xhtml"
+  SHAPE="496,449,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#protected#admin#neueStartaufstellungAnlegen.xhtml:0"
+   NAME="item" PATH="/protected/admin/neueStartaufstellungAnlegen.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="main_menue1::#protected#public#index.xhtml"
+    NAME="output" PATH="/protected/public/index.xhtml"
+    TARGET="rules:#protected#public#index.xhtml" TITLE="main_menue1" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM
+  NAME="rules:#protected#public#weltcupwertungAnzeigen.xhtml"
+  PATH="/protected/public/weltcupwertungAnzeigen.xhtml"
+  SHAPE="512,481,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#protected#public#weltcupwertungAnzeigen.xhtml:0"
+   NAME="item" PATH="/protected/public/weltcupwertungAnzeigen.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="main_menue2::#protected#public#index.xhtml"
+    NAME="output" PATH="/protected/public/index.xhtml"
+    TARGET="rules:#protected#public#index.xhtml" TITLE="main_menue2" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#protected#public#rennergebnisAnzeigen.xhtml"
+  PATH="/protected/public/rennergebnisAnzeigen.xhtml" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#protected#public#rennergebnisAnzeigen.xhtml:0" NAME="item"
+   PATH="/protected/public/rennergebnisAnzeigen.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="main_menue4::#protected#public#index.xhtml"
+    NAME="output" PATH="/protected/public/index.xhtml"
+    TARGET="rules:#protected#public#index.xhtml" TITLE="main_menue4" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

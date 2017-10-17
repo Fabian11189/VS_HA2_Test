@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://java.sun.com/jsf/html">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/main.css" rel="stylesheet" type="text/css" />
+   
+        <title>Rennergebnis anzeigen</title>
+    </h:head>
+    <h:body>
+	<h3>Rennergebnis</h3>	
+	    <h:form>
+	    	<h3>Rennen auswaehlen</h3>
+	    	<h:panelGrid columns="2">
+	        	<p:selectOneMenu id="RennenMenue" value="#{rennergebnisMB.renn_ID}" converter="javax.faces.Integer">
+	            	<f:selectItem itemLabel="--Rennen auswaehlen--" noSelectionOption="true"/>
+	        		<f:selectItems value="#{rennenMB.alleRennen}" var="rennen"  itemValue="#{rennen.rennen_id}" itemLabel="#{rennen.ort}" > 
+	            	</f:selectItems>
+	        	</p:selectOneMenu>
+			</h:panelGrid><br/>
+			<h:commandButton update="datatable" value="Ergebnis anzeigen" style= " width : 200px "/>
+			<h:panelGroup id="datatable">
+				<h:dataTable value="#{rennergebnisMB.ergebnisListNachRennen()}"
+						var="re"
+						styleClass="table"
+						headerClass="table-header"
+						rowClasses="table-odd-row,table-even-row">
+					<h:column>
+						<f:facet name="header">Platz 1</f:facet>
+						#{re.platz_01.name}
+					</h:column>
+			
+					<h:column>
+						<f:facet name="header">Platz 2</f:facet>
+						#{re.platz_02.name}
+					</h:column>
+					<h:column>
+						<f:facet name="header">Platz 3</f:facet>
+						#{re.platz_03.name}
+					</h:column>
+					<h:column>
+						<f:facet name="header">Platz 4</f:facet>
+						#{re.platz_04.name}
+					</h:column>
+					<h:column>
+						<f:facet name="header">Platz 5</f:facet>
+						#{re.platz_05.name}
+					</h:column>	
+				</h:dataTable>
+			</h:panelGroup>
+			<h:commandButton action="main_menue4" value = "Zur&uuml;ck" style= " width : 200px "/>
+		</h:form>
+    </h:body>
+</html>
